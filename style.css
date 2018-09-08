@@ -1,6 +1,18 @@
-body {
-  padding-top: 5rem;
+nav {
+  -webkit-transition: background-color 250ms ease-in-out;
+  -moz-transition: background-color 250ms ease-in-out;
+  -o-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
 }
-.starter-template {
-  padding: 3rem 1.5rem;
+
+nav.sps--abv {
+  background-color: transparent!important;
+}
+
+#header {
+  height:100vh;
+  min-height:400px;
+  background-size:cover;
+  background-image:url('http://chromecastbg.alexmeub.com/images/orig_Engagement-2567.jpg');
+  background-position: top center;
 }
