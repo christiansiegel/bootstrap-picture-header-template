@@ -6,10 +6,10 @@ nav {
 }
 
 #header {
-  height:100vh;
-  min-height:400px;
-  background-size:cover;
-  background-image:url('assets/image.jpg');
+  height: 100vh;
+  min-height: 400px;
+  background-size: cover;
+  background-image: url('assets/image.jpg');
   background-position: top center;
   background-attachment: fixed;
 }
