@@ -1,16 +1,12 @@
-function initScrollPosStyling() {
+function initNavScrollStyling() {
   var nav = $("nav");
   var toggler = $("nav button.navbar-toggler");
-  var header = $("#header");
-
-  var navHeight = nav.outerHeight();
 
   var update = function(inverseExpanded) {
     return function() {
       var scroll = $(window).scrollTop();
-      var offset = header.outerHeight() - navHeight;
       var expanded = (toggler.attr("aria-expanded") === "true") ^ inverseExpanded;
-      if (scroll >= offset || expanded) {
+      if (scroll > 0 || expanded) {
         nav
           .removeClass('bg-transparent')
           .addClass('bg-primary');
@@ -30,15 +26,15 @@ function initScrollPosStyling() {
 
 function initMainLink() {
   var content = document.getElementById('main');
-  var navHeight = $("nav").outerHeight()
+  var nav = $("nav");
   $("#main-link").click(function(event) {
-    event.preventDefault()
-    var count = content.offsetTop - window.scrollY - navHeight;
-    window.scrollBy({top: count, left: 0, behavior: 'smooth'})
+    event.preventDefault();
+    var count = content.offsetTop - window.scrollY - nav.outerHeight();
+    window.scrollBy({top: count, left: 0, behavior: 'smooth'});
   });
 }
 
 $(function() {
-  initScrollPosStyling();
+  initNavScrollStyling();
   initMainLink();
 });
