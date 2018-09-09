@@ -4,15 +4,28 @@ nav {
   -o-transition: background-color 250ms ease-in-out;
   transition: background-color 250ms ease-in-out;
 }
-
 nav.sps--abv {
   background-color: transparent!important;
+}
+nav.sps--blw {
+  background-color: #117AFF!important; /* primary */
+}
+nav.sps--abv .navbar-brand,
+nav.sps--abv .navbar-text {
+    color: rgba(0,0,0,.8);
+}
+nav.sps--abv .navbar-nav .nav-link {
+    color: rgba(0,0,0,.5);
+}
+nav.sps--abv .nav-item.active .nav-link,
+nav.sps--abv .nav-item:hover .nav-link {
+    color: #000;
 }
 
 #header {
   height:100vh;
   min-height:400px;
   background-size:cover;
-  background-image:url('http://chromecastbg.alexmeub.com/images/orig_Engagement-2567.jpg');
+  background-image:url('assets/image.jpg');
   background-position: top center;
 }
