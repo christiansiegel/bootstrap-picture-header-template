@@ -28,4 +28,5 @@ nav.sps--abv .nav-item:hover .nav-link {
   background-size:cover;
   background-image:url('assets/image.jpg');
   background-position: top center;
+  background-attachment: fixed;
 }
