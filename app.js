@@ -24,5 +24,6 @@ $(function() {
 
   $(window).scroll(update(false));
   $(window).resize(update(false));
+  $(window).bind('load', update(false));
   toggler.click(update(true));
 });
